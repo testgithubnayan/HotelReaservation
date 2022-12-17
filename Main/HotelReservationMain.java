@@ -4,6 +4,7 @@ public class HotelReservationMain {
 
     public static void main(String[] args) {
         System.out.println("Welcome to hotel reservation program");
+
         HotelReservationService hotelReservation = new HotelReservationService();
         hotelReservation.addHotel(new Hotel("Lakewood", 110));
         hotelReservation.addHotel(new Hotel("Bridgewood", 160));
@@ -11,6 +12,11 @@ public class HotelReservationMain {
 
         Hotel cheapest = hotelReservation.cheapestHotel();
         System.out.println("Cheapest Hotel: " + cheapest.getName() + ", Total Cost: " + cheapest.getTotalCost());
+    }
+
+
+        HotelReservationService hotelReservationService =new HotelReservationService();
+        hotelReservationService.addHotel(new Hotel("Lakewood",110));
     }
 
 }
